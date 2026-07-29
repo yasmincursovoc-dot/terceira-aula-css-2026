@@ -16,6 +16,33 @@ body{
 }
 /*==== Video de fundo ==== */
 /*==== o video fica fixo, atras de tudo, cobrindo a tela inteira ==== */
+.logo{
+  animation: entrarDoTopo 0.8s ease-out both;
+}
+@keyframes entrarDoTopo {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header p{
+  animation: DescricaoTopo 0.8s ease-out both;
+}
+@keyframes DescricaoTopo {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .bg-video{
     position: fixed;
@@ -40,7 +67,7 @@ body{
 
 header{
     text-align: center;
-    color: white;
+    color: rgb(27, 102, 189);
     margin-bottom: 40px;
 }
 header h1{
@@ -116,7 +143,22 @@ header p{
     font-weight: bold;
     transition: background 0.3s ease;
 }
+main{
+    flex: 1;
+}
+
+
 .btn:hover{background-color: #4a98f1;}
+
+footer{
+    margin-bottom: -40px;
+    width: 110%;
+    background: #061136;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
 /*---RESPONSIVO---*/
 @media(max-widht:600px){
 .card{
