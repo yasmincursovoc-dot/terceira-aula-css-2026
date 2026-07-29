@@ -116,7 +116,7 @@ header p{
     font-weight: bold;
     transition: background 0.3s ease;
 }
-.btn:houver{background-color: #ff2e2e;}
+.btn:hover{background-color: #4a98f1;}
 /*---RESPONSIVO---*/
 @media(max-widht:600px){
 .card{
